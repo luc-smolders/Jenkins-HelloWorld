@@ -9,6 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh 'echo $GO111MODULE'
         sh 'go build'
       }
     }
